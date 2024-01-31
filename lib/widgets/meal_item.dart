@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:meals_app/screens/meal_detail_screen.dart';
+
+import 'package:chefs_delight/screens/meal_detail_screen.dart';
 import './/Models/meal.dart';
 
 class MealItem extends StatelessWidget {
@@ -11,7 +12,8 @@ class MealItem extends StatelessWidget {
   final Complexity complexity;
   final Affordability affordability;
 
-  const MealItem({Key? key, 
+  const MealItem({
+    Key? key,
     required this.id,
     required this.title,
     required this.imageUrl,
@@ -74,7 +76,8 @@ class MealItem extends StatelessWidget {
                 child: Container(
                   width: 300,
                   color: Colors.black54,
-                  padding: const EdgeInsets.symmetric(vertical: 5, horizontal: 20),
+                  padding:
+                      const EdgeInsets.symmetric(vertical: 5, horizontal: 20),
                   child: Text(
                     title,
                     style: const TextStyle(fontSize: 26, color: Colors.white),

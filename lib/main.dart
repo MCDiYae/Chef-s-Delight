@@ -64,19 +64,14 @@ class _MyAppState extends State<MyApp> {
               fontSize: 24,
             )),
       ),
-      
       initialRoute: '/',
       routes: {
         '/': ((context) => TabsScreen(_favoriteMeals)),
         CategoryMealsScreen.routeName: ((context) =>
             CategoryMealsScreen(_availableMeals)),
-       
         MealDetailScreen.routeName: (context) =>
             MealDetailScreen(_toggleFavorite, isMealFavorite),
       },
-
-    
-
       onUnknownRoute: (settings) {
         return MaterialPageRoute(
             builder: ((context) => const CategoriesScreen()));
